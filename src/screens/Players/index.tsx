@@ -51,7 +51,7 @@ export function Players() {
         data={players}
         keyExtractor={(item) => item}
         renderItem={({ item }) => (
-          <PlayerCard name={players} onRemove={() => {}} />
+          <PlayerCard name={item} onRemove={() => {}} />
         )}
         ListEmptyComponent={() => (
           <ListEmpty message="Não há pessoas nesse time." />
